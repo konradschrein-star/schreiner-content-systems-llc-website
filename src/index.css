@@ -323,7 +323,7 @@
 
   /* Typography scale */
   .text-display {
-    font-size: clamp(48px, 12vw, 168px);
+    font-size: clamp(32px, 6vw, 80px);
     line-height: 0.9;
     letter-spacing: -0.03em;
   }
