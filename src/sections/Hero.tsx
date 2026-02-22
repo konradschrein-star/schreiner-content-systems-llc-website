@@ -249,11 +249,11 @@ export function Hero() {
         <FloatingCube size={60} delay={2} x="85%" y="30%" z={-100} />
         <FloatingCube size={40} delay={4} x="75%" y="70%" z={50} />
         <FloatingCube size={100} delay={1} x="5%" y="60%" z={-50} />
-        
+
         {/* Wireframe spheres */}
         <WireframeSphere size={120} delay={0.5} x="90%" y="15%" />
         <WireframeSphere size={80} delay={3} x="15%" y="75%" />
-        
+
         {/* Geometric lines */}
         <div
           className="absolute"
@@ -326,7 +326,7 @@ export function Hero() {
                 transform: `translateY(${(i % 2 === 0 ? -1 : 1) * 4}px)`,
               }}
             >
-              {char}
+              {char === ' ' ? '\u00A0' : char}
             </span>
           ))}
         </h1>

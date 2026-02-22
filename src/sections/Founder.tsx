@@ -108,14 +108,22 @@ export function Founder() {
             className="relative opacity-0"
             style={{ willChange: 'transform, opacity' }}
           >
-            <div className="aspect-square max-w-md mx-auto lg:mx-0 border border-white/10 bg-white/[0.02] flex items-center justify-center">
-              <div className="text-center">
-                <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-caption text-white/30">Photo</span>
+            {founderConfig.image ? (
+              <img
+                src={founderConfig.image}
+                alt={founderConfig.imageAlt}
+                className="aspect-square w-full max-w-md mx-auto lg:mx-0 border border-white/10 bg-white/[0.02] object-cover"
+              />
+            ) : (
+              <div className="aspect-square max-w-md mx-auto lg:mx-0 border border-white/10 bg-white/[0.02] flex items-center justify-center">
+                <div className="text-center">
+                  <div className="w-24 h-24 border border-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <span className="text-caption text-white/30">Photo</span>
+                  </div>
+                  <span className="text-body-sm text-white/40">{founderConfig.imageAlt}</span>
                 </div>
-                <span className="text-body-sm text-white/40">{founderConfig.imageAlt}</span>
               </div>
-            </div>
+            )}
 
             {/* Decorative elements */}
             <div className="absolute -top-4 -right-4 w-24 h-24 border border-white/5" />

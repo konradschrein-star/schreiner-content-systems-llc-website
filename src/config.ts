@@ -55,7 +55,7 @@ export interface HeroConfig {
 }
 
 export const heroConfig: HeroConfig = {
-  title: "SCHREINER",
+  title: "SCHREINER CONTENT SYSTEMS LLC",
   subtitle: "Engineering High-Performance Digital Media Systems",
   backgroundImage: "",
   servicesLabel: "Digital Media Systems",
@@ -226,7 +226,7 @@ export const founderConfig: FounderConfig = {
   role: "Founder, Schreiner Content Systems LLC",
   bio: "Konrad focuses on engineering scalable content systems designed for algorithmic distribution and audience growth. His work combines media production, workflow optimization, and AI-assisted tooling.",
   email: "konrad.schrein@gmail.com",
-  image: "",
+  image: "/images/founder.jpg",
   imageAlt: "Founder Photo",
 };
 
